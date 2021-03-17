@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Le Site Web</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <h1>Tests avec les paragraphes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie luctus justo sed vulputate. Sed luctus finibus sollicitudin. Pellentesque consectetur tempor elit quis facilisis. Quisque convallis dui turpis, in dapibus tellus suscipit quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec rhoncus tincidunt mauris, a lobortis dui luctus nec. Nulla volutpat ac justo quis sagittis. Maecenas sit amet est in magna semper ullamcorper. Donec nunc ex, condimentum in nisi pellentesque, mattis laoreet eros. Nullam sit amet ligula dignissim elit ullamcorper laoreet. Ut pulvinar imperdiet nunc, eu semper massa vulputate et. Duis at hendrerit urna, eu malesuada justo. Phasellus sit amet lectus quis nunc iaculis feugiat.</p>
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eu auctor elit. Mauris sem risus, sodales a dapibus eu, pellentesque vitae nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam lobortis pharetra sapien, quis lacinia neque sodales quis. Maecenas vestibulum purus sit amet ligula malesuada blandit. Proin vestibulum ullamcorper lorem, et semper libero ornare nec. Suspendisse porttitor iaculis fringilla. Nulla facilisi. Fusce tempus euismod ligula. Morbi viverra ligula sed diam fringilla, non ornare risus euismod. Nam laoreet nec dolor sit amet bibendum. Phasellus egestas placerat consequat.</p>
+        <p>Vestibulum interdum placerat auctor. Vestibulum elementum ullamcorper arcu eget vestibulum. Duis sit amet nibh bibendum odio interdum dapibus sed id ipsum. Ut tincidunt pellentesque dolor ut tincidunt. Praesent sed aliquet quam, ut molestie nulla. Cras rutrum, nibh in molestie pretium, diam mi dignissim libero, et semper elit mauris non tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus vulputate eros est, a auctor felis consequat eget.</p>
+        <p>Integer quis consectetur tellus. Quisque ac mollis tortor. Nullam sed tortor commodo, hendrerit augue non, pharetra felis. Sed vitae efficitur eros. Fusce cursus semper urna eu consequat. In nec sapien a metus porttitor finibus. Donec semper diam id lacus blandit ullamcorper id id ligula. Phasellus faucibus dui non sem bibendum, vitae facilisis massa pulvinar. Donec pharetra scelerisque magna, at luctus quam elementum et. Curabitur pretium metus bibendum, dignissim sapien ac, scelerisque lacus.
+
+</p>
+
+
+</html>
+
+
+<ul id="social">
+	            <li><a href="https://www.instagram.com"><img src="testicone.png"/></a></li>
+	            <li><a href="https://www.facebook.com"><img src="testicone.png"></a></li>
+	            <li><a href="https://www.linkedin.com"><img src="testicone.png"></a></li>
+	            <li><a href="https://www.pinterest.com"><img src="testicone.png" alt="icone Pinterest"></a></li>
+	            <li><a href="https://www.youtube.com"><img src="testicone.png" alt="icone youtube"></a></li>
+	        </ul>

@@ -1,0 +1,56 @@
+@font-face
+{
+	font-family: system-ui;
+	font-weight: normal;
+	font-size: normal;
+
+}
+
+h1, h2, p, ul
+{
+	color : white;
+}
+
+
+.carreblanc
+{
+	border:1px solid white;
+	width: 600px;
+	text-align: justify;
+	padding: 3px 5px;
+	margin : auto;
+	margin-bottom: 20px;
+}
+
+#conteneur
+{
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+body
+{
+    background: url("back.png") fixed
+}
+
+
+
+.element:nth-child(3)
+{
+	flex 1;
+}
+
+h1
+{
+	text-align: center;
+}
+
+h1
+{
+	font-family: system-ui;
+}
