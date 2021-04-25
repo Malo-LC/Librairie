@@ -1,6 +1,5 @@
 body{
     background: white;
-
 }
 body{
 	font-size: 15px;
@@ -16,11 +15,6 @@ body{
 .logo{
 	padding: 0;
 }
-#conteneur{
-	text-align: justify;
-	margin-right: 5px;
-	margin-left: 5px;
-}
 ul.hotbar {
   list-style-type: none;
   margin: 0;
@@ -28,6 +22,7 @@ ul.hotbar {
   overflow: hidden;
   background-color: #2F2C57;
   position: -webkit-sticky;
+  z-index:999;
   position: sticky;
   top: 0;
   width: 100%
@@ -83,40 +78,6 @@ li.toolbar:last-child {
 	margin-right: 10px;
 	text-align: center;
 }
-.couverure{
-  width: 182px;
-  height: 267px;  
-}
-.livretab{
-  width: 182px;
-  height: 267px;
-  float: left;
-}
-.presentoir{
-  width: 182px;
-  display: flex;
-  flex-flow: row wrap;
-  background-color: lightgrey;
-  padding: 5px;
-  justify-content: flex-start;
-  align-items: center;
-  margin-right: 30px;
-}
-.presentoir:nth-last-child(1){
-  margin:0;
-}
-.presentoir p{
-  margin: 0;
-  margin-left: 5px;
-  margin-right: 85px;
-  letter-spacing: 1px;
-}
-.ajout_panier{
-  height: 40px;
-  width: 40px;
-  margin: 8px 0;
-  border: solid black 1px;
-}
 .lien{
   height: 40px;
   width: 40px;
@@ -145,6 +106,61 @@ ul.social li{
 	flex-direction: row;
   flex-wrap: wrap;
 }
+.infoprat{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.dates{
+  display: flex;
+  flex-direction: row;
+  height: 35px;
+}
+.jours{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  color: black;
+}
+.horaires{
+  color: #666666;
+}
+.logo_info{
+  height: 25px;
+  width: 25px;
+}
+.contact_case{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tel{
+  letter-spacing: 0.5px;
+}
+.mail_info{
+  margin-left: 5px;
+}
+.carte{
+  margin-left: 20px;
+}
+.adresse{
+  margin-top: 20px;
+}
+.heures ,.contact , .adresse{
+  font-size: 13px;
+}
+h1 {
+  color: black;
+  font-family: 'Righteous', cursive;
+  font-weight: normal;
+  line-height: 60px;
+  margin: 10px 0 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 { color: #2F2C57; font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; margin: 0 0 10px; }
+
+
 
 
 
@@ -198,7 +214,7 @@ main {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  
 }
 
 /* Grouping content

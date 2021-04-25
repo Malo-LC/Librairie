@@ -4,21 +4,121 @@
 	<meta charset="utf-8" />
     <title>Librairie</title>
     <link rel="stylesheet" type="text/css" href="stylelibrairie.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icone.png">
+
 </head>
+
+
 <body>
-	<header>
-		<h1 class="titre">La librairie du plessis</h1>
-		<p class="titre">On essaye un petit site</p>
-	</header>
-<div id="menu">
-	<nav>
-		<div class="element"><p class="toolbar"><a href="Acceuil.html">Acceuil</a></p></div>
-		<div class="element"><p class="toolbar"><a href="Presse.html">Presse</a></p></div>
-		<div class="element"><p class="toolbar"><a href="Librairie.html">Librairie</a></p></div>
-		<div class="element"><p class="toolbar"><a href="Carterie.html">Carterie</a></p></div>
-		<div class="element"><p class="toolbar"><a href="Papeterie.html">Papeterie</a></p></div>
-		<div class="element"><p class="toolbar"><a href="Cadeaux.html">Cadeux</a></p></div>
-	</nav>
+	<div id="tout_en_haut">
+		
+		<div><a href="http://librairie-saint-nicolas.com/index.html"><img height="120" style="margin-top: -15px" class="logo" src="logov2.png" alt="Logo Librairie"></a></div>
+		<div class="tools">
+			<div class="liens"> <a href="Presse.html"> <img class="lien" alt="Panier" src="cart.png">  </a> <p>Panier</p></div>
+			<div class="liens"> <a href="Presse.html"> <img class="lien" alt="Compte" src="compte.png"> </a><p>Compte</p> </div>
+			<div class="liens"> <a href="Presse.html"> <img class="lien" alt="Contact" src="contact.png"> </a> <p>Contact</p></div>
+			<div class="liens"> <a onclick="window.print()"> <img class="lien" alt="Imprimer" src="print.png"> </a> <p>Imprimer</p></div>
+
+
+		</div>
+	</div>
+	
+		
+		
+	<ul class="hotbar">
+		<li class="toolbar" ><a href="Acceuil.html">Acceuil</a></li>
+		<li class="toolbar"><a href="Presse.html">Presse</a></li>
+		<li class="toolbar"><a href="Librairie.html">Librairie</a></li>
+		<li class="toolbar"><a href="Carterie.html">Carterie</a></li>
+		<li class="toolbar active"><a href="Papeterie.html">Papeterie</a></li>
+		<li class="toolbar left" style="float:right"><a href="Cadeaux.html">À propos</a></li>
+    </ul>
+
+    <!-- <div style="margin-left: 10px">
+    <p>Petit formulaire en bal?</p>
+    <form>
+    	<label for="fname">First name:</label><br>
+    	<input type="text" id="fname" name="fname"><br>
+    	<label for="lname">Last name:</label><br>
+    	<input type="text" id="lname" name="lname"><br>
+    	<br>
+    	<input type="submit" value="Submit">
+	</form>
+	</div> -->
+
+
+
+
+	<!-- <p id="demo"> Test</p>
+	<button type="button" onclick="myfonction()">appuyer</button>
+	<button type="button" onclick="fonctionalerte()">alerte</button>
+	<button onclick="window.print()">Print this page</button>
+	<script type="text/javascript" src="myscript.js"></script> -->
+
+
+	
+
+
+	<div id="vitrine">
+		<div class="presentoir">
+		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
+		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
+		</div>
+		<div class="presentoir">
+		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
+		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
+		</div>
+				<div class="presentoir">
+		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
+		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
+		</div>
+				<div class="presentoir">
+		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
+		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
+		</div>
+				<div class="presentoir">
+		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
+		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
+		</div>
+	</div>
+
+
+	<div id="conteneur">
+        <div class="element"><p class="carreblanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie luctus justo sed vulputate. Sed luctus finibus sollicitudin. Pellentesque consectetur tempor elit quis facilisis. Quisque convallis dui turpis, in dapibus tellus suscipit quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec rhoncus tincidunt mauris, a lobortis dui luctus nec. Nulla volutpat ac justo quis sagittis. Maecenas sit amet est in magna semper ullamcorper. Donec nunc ex, condimentum in nisi pellentesque, mattis laoreet eros. Nullam sit amet ligula dignissim elit ullamcorper laoreet. Ut pulvinar imperdiet nunc, eu semper massa vulputate et. Duis at hendrerit urna, eu malesuada justo. Phasellus sit amet lectus quis nunc iaculis feugiat.</p></div>
+        <div class="element"><p class="carreblanc">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eu auctor elit. Mauris sem risus, sodales a dapibus eu, pellentesque vitae nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam lobortis pharetra sapien, quis lacinia neque sodales quis. Maecenas vestibulum purus sit amet ligula malesuada blandit. Proin vestibulum ullamcorper lorem, et semper libero ornare nec. Suspendisse porttitor iaculis fringilla. Nulla facilisi. Fusce tempus euismod ligula. Morbi viverra ligula sed diam fringilla, non ornare risus euismod. Nam laoreet nec dolor sit amet bibendum. Phasellus egestas placerat consequat.</p></div>
+        <div class="element"><p class="carreblanc">Vestibulum interdum placerat auctor. Vestibulum elementum ullamcorper arcu eget vestibulum. Duis sit amet nibh bibendum odio interdum dapibus sed id ipsum. Ut tincidunt pellentesque dolor ut tincidunt. Praesent sed aliquet quam, ut molestie nulla. Cras rutrum, nibh in molestie pretium, diam mi dignissim libero, et semper elit mauris non tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus vulputate eros est, a auctor felis consequat eget.</p></div>
+        <div class="element"><p class="carreblanc">Integer quis consectetur tellus. Quisque ac mollis tortor. Nullam sed tortor commodo, hendrerit augue non, pharetra felis. Sed vitae efficitur eros. Fusce cursus semper urna eu consequat. In nec sapien a metus porttitor finibus. Donec semper diam id lacus blandit ullamcorper id id ligula. Phasellus faucibus dui non sem bibendum, vitae facilisis massa pulvinar. Donec pharetra scelerisque magna, at luctus quam elementum et. Curabitur pretium metus bibendum, dignissim sapien ac, scelerisque lacus.</p></div>
+        
 </div>
+<div id="conteneur">
+        <div class="element"><p class="carreblanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie luctus justo sed vulputate. Sed luctus finibus sollicitudin. Pellentesque consectetur tempor elit quis facilisis. Quisque convallis dui turpis, in dapibus tellus suscipit quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec rhoncus tincidunt mauris, a lobortis dui luctus nec. Nulla volutpat ac justo quis sagittis. Maecenas sit amet est in magna semper ullamcorper. Donec nunc ex, condimentum in nisi pellentesque, mattis laoreet eros. Nullam sit amet ligula dignissim elit ullamcorper laoreet. Ut pulvinar imperdiet nunc, eu semper massa vulputate et. Duis at hendrerit urna, eu malesuada justo. Phasellus sit amet lectus quis nunc iaculis feugiat.</p></div>
+        <div class="element"><p class="carreblanc">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eu auctor elit. Mauris sem risus, sodales a dapibus eu, pellentesque vitae nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam lobortis pharetra sapien, quis lacinia neque sodales quis. Maecenas vestibulum purus sit amet ligula malesuada blandit. Proin vestibulum ullamcorper lorem, et semper libero ornare nec. Suspendisse porttitor iaculis fringilla. Nulla facilisi. Fusce tempus euismod ligula. Morbi viverra ligula sed diam fringilla, non ornare risus euismod. Nam laoreet nec dolor sit amet bibendum. Phasellus egestas placerat consequat.</p></div>
+        <div class="element"><p class="carreblanc">Vestibulum interdum placerat auctor. Vestibulum elementum ullamcorper arcu eget vestibulum. Duis sit amet nibh bibendum odio interdum dapibus sed id ipsum. Ut tincidunt pellentesque dolor ut tincidunt. Praesent sed aliquet quam, ut molestie nulla. Cras rutrum, nibh in molestie pretium, diam mi dignissim libero, et semper elit mauris non tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus vulputate eros est, a auctor felis consequat eget.</p></div>
+        <div class="element"><p class="carreblanc">Integer quis consectetur tellus. Quisque ac mollis tortor. Nullam sed tortor commodo, hendrerit augue non, pharetra felis. Sed vitae efficitur eros. Fusce cursus semper urna eu consequat. In nec sapien a metus porttitor finibus. Donec semper diam id lacus blandit ullamcorper id id ligula. Phasellus faucibus dui non sem bibendum, vitae facilisis massa pulvinar. Donec pharetra scelerisque magna, at luctus quam elementum et. Curabitur pretium metus bibendum, dignissim sapien ac, scelerisque lacus.</p></div>
+        
+</div>
+
+<div id="conteneur">
+        <div class="element"><p class="carreblanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie luctus justo sed vulputate. Sed luctus finibus sollicitudin. Pellentesque consectetur tempor elit quis facilisis. Quisque convallis dui turpis, in dapibus tellus suscipit quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec rhoncus tincidunt mauris, a lobortis dui luctus nec. Nulla volutpat ac justo quis sagittis. Maecenas sit amet est in magna semper ullamcorper. Donec nunc ex, condimentum in nisi pellentesque, mattis laoreet eros. Nullam sit amet ligula dignissim elit ullamcorper laoreet. Ut pulvinar imperdiet nunc, eu semper massa vulputate et. Duis at hendrerit urna, eu malesuada justo. Phasellus sit amet lectus quis nunc iaculis feugiat.</p></div>
+        <div class="element"><p class="carreblanc">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eu auctor elit. Mauris sem risus, sodales a dapibus eu, pellentesque vitae nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam lobortis pharetra sapien, quis lacinia neque sodales quis. Maecenas vestibulum purus sit amet ligula malesuada blandit. Proin vestibulum ullamcorper lorem, et semper libero ornare nec. Suspendisse porttitor iaculis fringilla. Nulla facilisi. Fusce tempus euismod ligula. Morbi viverra ligula sed diam fringilla, non ornare risus euismod. Nam laoreet nec dolor sit amet bibendum. Phasellus egestas placerat consequat.</p></div>
+        <div class="element"><p class="carreblanc">Vestibulum interdum placerat auctor. Vestibulum elementum ullamcorper arcu eget vestibulum. Duis sit amet nibh bibendum odio interdum dapibus sed id ipsum. Ut tincidunt pellentesque dolor ut tincidunt. Praesent sed aliquet quam, ut molestie nulla. Cras rutrum, nibh in molestie pretium, diam mi dignissim libero, et semper elit mauris non tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus vulputate eros est, a auctor felis consequat eget.</p></div>
+        <div class="element"><p class="carreblanc">Integer quis consectetur tellus. Quisque ac mollis tortor. Nullam sed tortor commodo, hendrerit augue non, pharetra felis. Sed vitae efficitur eros. Fusce cursus semper urna eu consequat. In nec sapien a metus porttitor finibus. Donec semper diam id lacus blandit ullamcorper id id ligula. Phasellus faucibus dui non sem bibendum, vitae facilisis massa pulvinar. Donec pharetra scelerisque magna, at luctus quam elementum et. Curabitur pretium metus bibendum, dignissim sapien ac, scelerisque lacus.</p></div>
+        
+</div>
+
+<div class="tirer_trait"></div>
+
+<div id="footer">
+
+		<ul class="social">
+	        <li><a href="https://www.instagram.com"><img class="lien" src="instagram.png"></a></li>
+	        <li><a href="https://www.facebook.com"><img class="lien" src="facebook.png" alt="icone facebook"></a></li>
+	        <li><a href="https://www.linkedin.com"><img class="lien" src="linkedin.png" alt="icone pinterest"></a></li>
+	        <li><a href="https://www.pinterest.com"><img class="lien" src="pinterest.png" alt="icone Pinterest"></a></li>
+	        
+	    </ul>
+</div>
+
+
 </body>
 </html>
