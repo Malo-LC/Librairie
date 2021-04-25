@@ -43,6 +43,7 @@ body
 .element:nth-child(3)
 {
 	flex 1;
+	background-color: blue;
 }
 
 h1
