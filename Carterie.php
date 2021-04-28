@@ -12,8 +12,8 @@
 <body>
 	<?php include("entete.php"); ?>
 	
-		
-		
+	
+	
 	<ul class="hotbar">
 		<li class="toolbar" ><a href="Acceuil.php">Accueil</a></li>
 		<li class="toolbar"><a href="Presse.php">Presse</a></li>
@@ -109,7 +109,7 @@
 	<br>
 </div>	
 
-<div class="tirer_trait"></div>
+
 
 <?php include("footer.php"); ?>
 

@@ -1,3 +1,6 @@
+<div class="tirer_trait"></div>
+
+
 <div id="footer">
 
 		<ul class="social">

@@ -1,5 +1,3 @@
-
-
 <div id="tout_en_haut">
 		
 		<div><a href="Acceuil.php"><img height="120" style="margin-top: -15px" class="logo" src="logov2.png" alt="Logo Librairie"></a></div>
@@ -12,6 +10,3 @@
 
 		</div>
 	</div>
-	
-		
-		

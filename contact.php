@@ -76,7 +76,7 @@
 		<p>Le Plessis-Bouchard, France</p>
 	</div>
 </div>
-<div class="tirer_trait"></div>
+git
 
 <?php include("footer.php"); ?>
 

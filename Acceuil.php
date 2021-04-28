@@ -80,7 +80,7 @@
         
 </div>
 
-<div class="tirer_trait"></div>
+
 
 <?php include("footer.php"); ?>
 
