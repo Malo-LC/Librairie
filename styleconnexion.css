@@ -158,8 +158,15 @@ ul.social li{
 .enregistrer:hover {
   background-color: #857DF5;
 }
-
-
+h1 {
+  color: black;
+  font-family: 'Righteous', cursive;
+  font-weight: normal;
+  line-height: 60px;
+  margin: 10px 0 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 
 
@@ -212,10 +219,6 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
 
 /* Grouping content
    ========================================================================== */

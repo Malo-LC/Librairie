@@ -21,7 +21,7 @@
     <div class="compte_oui_non">
     	<div class="compte_oui">
     		<h1>Vous avez déja votre compte?</h1>
-    		<form class="form_oui">
+    		<form class="form_oui" method="post" action="compte.php">
 		    	<label for="email">Email:</label>
 		    	<input type="email" id="email" class="champ" name="mail" required>
 		    	<label for="lname">Mot de passe:</label>
