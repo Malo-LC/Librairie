@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +16,7 @@
 
 
 	<ul class="hotbar">
-		<li class="toolbar active" ><a href="Acceuil.php">Accueil</a></li>
+		<li class="toolbar" ><a href="Acceuil.php">Accueil</a></li>
 		<li class="toolbar"><a href="Presse.php">Presse</a></li>
 		<li class="toolbar"><a href="Librairie.php">Librairie</a></li>
 		<li class="toolbar"><a href="Carterie.php">Carterie</a></li>
@@ -76,7 +81,7 @@
 		<p>Le Plessis-Bouchard, France</p>
 	</div>
 </div>
-git
+
 
 <?php include("footer.php"); ?>
 

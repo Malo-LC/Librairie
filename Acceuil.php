@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +13,7 @@
 
 </head>
 
+<p><a href="compte.php">lien</a></p>
 
 <body>
 	<?php include("entete.php"); ?>

@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(isset($_SESSION['mail'])==True){
+	header('Location: compte.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +18,7 @@
  	<?php include("entete.php"); ?>	
 
 	<ul class="hotbar">
-		<li class="toolbar active" ><a href="Acceuil.php">Accueil</a></li>
+		<li class="toolbar" ><a href="Acceuil.php">Accueil</a></li>
 		<li class="toolbar"><a href="Presse.php">Presse</a></li>
 		<li class="toolbar"><a href="Librairie.php">Librairie</a></li>
 		<li class="toolbar"><a href="Carterie.php">Carterie</a></li>
@@ -30,7 +38,7 @@
     		</form>
     	</div>
     	<div class="compte_oui">
-    		<h1>Créer vous un compte</h1>
+    		<h1>Créer votre compte</h1>
     		<form class="form_oui"> 
     			<label for="nom">Nom</label>
 		    	<input type="text" id="nom" class="champ" name="nom" required>

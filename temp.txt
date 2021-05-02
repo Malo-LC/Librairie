@@ -1,0 +1,23 @@
+<input type="button" name="deco" class="enregistrer" value="Deconnexion" onclick="logout()">
+    <h2></h2>
+
+
+    <?php include("footer.php"); ?>
+
+    <script type="text/javascript">
+    	function logout() {
+    		<?php unset($_SESSION['mail']);
+    		session_destroy();  ?>
+    		
+    		location.href='Acceuil.php';
+    		console.log(1);
+    	}
+    </script>
+    
+
+if(isset($_SESSION['mail'])==True){
+	echo $_SESSION['mail'];
+}
+else{
+	echo '1frezgyhbiuefbrhsugefrsdezrrezqbhuerfsyhu';
+}
