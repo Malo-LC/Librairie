@@ -4,6 +4,43 @@ if (isset($_SESSION['mail'])==NULL){
 	$_SESSION['mail'] = $_POST['mail'];
 }
 
+try
+{
+	$bdd = new PDO('mysql:host=localhost;dbname=coordonnees;charset=utf8', 'root', '');
+}
+catch(Exception $e)
+{
+        die('Erreur : '.$e->getMessage());
+}
+if (isset($_POST['nom'])==TRUE){
+	$nom = $_POST['nom'];
+}
+if (isset($_POST['prenom'])==TRUE){
+	$prenom = $_POST['prenom'];
+}
+if (isset($_POST['mail'])==TRUE){
+	$mail = $_POST['mail'];
+}
+if (isset($_POST['mot_de_passe'])==TRUE){
+	$mdp = $_POST['mot_de_passe'];
+}
+
+
+
+
+if(isset($mdp)==TRUE && isset($nom)==TRUE && isset($prenom)==TRUE && isset($mail)==TRUE)
+{
+	$req = $bdd->prepare('INSERT INTO coordonnee(Nom, Prenom, Email, MDP) VALUES (:nom, :prenom, :mail, :mdp)'); 
+	$req->execute(array(
+	'nom' => $nom,
+	'prenom' => $prenom,
+	'mail' => $mail,
+	'mdp' => $mdp
+	));
+}
+
+
+
 ?>
 
 <!DOCTYPE html>

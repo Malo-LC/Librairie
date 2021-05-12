@@ -13,7 +13,7 @@ session_start();
 
 </head>
 
-<p><a href="compte.php">lien</a></p>
+
 
 <body>
 	<?php include("entete.php"); ?>
@@ -54,12 +54,7 @@ session_start();
 		</div>
 	</div>
 
-	<?php echo "Celle-ci a été écrite entièrement en PHP."; ?>
-	        <p>
-            Cette ligne a été écrite entièrement en HTML.<br />
-            <?php echo "Celle-ci a été écrite entièrement en PHP."; ?>
-        </p>
- 
+
 
 
 	<div id="conteneur">

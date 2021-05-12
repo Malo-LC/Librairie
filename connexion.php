@@ -31,15 +31,15 @@ if(isset($_SESSION['mail'])==True){
     		<h1>Vous avez déja votre compte?</h1>
     		<form class="form_oui" method="post" action="compte.php">
 		    	<label for="email">Email:</label>
-		    	<input type="email" id="email" class="champ" name="mail" required>
+		    	<input type="email" id="email" class="champ_oui" name="mail" required>
 		    	<label for="lname">Mot de passe:</label>
-		    	<input type="password" id="mdp" class="champ" name="mot de passe" required>
+		    	<input type="password" id="mdp" class="champ_oui" name="mot de passe" required>
 		    	<input type="submit" value="Connexion" class="connexion">
     		</form>
     	</div>
     	<div class="compte_oui">
     		<h1>Créer votre compte</h1>
-    		<form class="form_oui"> 
+    		<form class="form_oui" method="post" action="compte.php"> 
     			<label for="nom">Nom</label>
 		    	<input type="text" id="nom" class="champ" name="nom" required>
 		    	<label for="prenom">Prenom</label>
@@ -47,8 +47,8 @@ if(isset($_SESSION['mail'])==True){
     			<label for="emailnouveau">Email</label>
 		    	<input type="email" id="emailnouveau" class="champ" name="mail" required>
 		    	<label for="mdpnouveau">Mot de passe</label>
-		    	<input type="password" id="mdpnouveau" class="champ" name="mot de passe" required>
-		    	<input type="submit" value="Enregistrer" class="enregistrer">
+		    	<input type="password" id="mdpnouveau" class="champ" name="mot_de_passe" required>
+		    	<input type="submit" value="Créer" class="enregistrer">
     		</form>
     		
     	</div>

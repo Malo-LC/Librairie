@@ -130,6 +130,16 @@ ul.social li{
   margin: 5px;
   padding: 3px;
   outline: none;
+  width: 80%;
+}
+.champ_oui{
+  border: none;
+  border-bottom: 1px solid grey; 
+  border-radius: 5px;
+  margin: 5px;
+  padding: 3px;
+  outline: none;
+  width: 70%;
 }
 .connexion{
   background-color: #2F2C57;
@@ -139,7 +149,7 @@ ul.social li{
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
-  width: 200px;
+  width: 150px;
   margin-top: 50px;
 }
 .connexion:hover{
@@ -152,7 +162,7 @@ ul.social li{
   padding: 16px 32px;
   text-decoration: none;
   cursor: pointer;
-  width: 200px;
+  width: 100px;
   margin-top: 10px;
 }
 .enregistrer:hover {
