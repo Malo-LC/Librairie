@@ -1,9 +1,9 @@
 <?php
 session_start();
-if(isset($_SESSION['mail'])==True){
+if(isset($_SESSION['mail'])==TRUE){
 	header('Location: compte.php');
 }
-
+echo $_SESSION['mail'];
 ?>
 
 <!DOCTYPE html>
@@ -29,16 +29,16 @@ if(isset($_SESSION['mail'])==True){
     <div class="compte_oui_non">
     	<div class="compte_oui">
     		<h1>Vous avez déja votre compte?</h1>
-    		<form class="form_oui" method="post" action="compte.php">
+    		<form class="form_oui" method="post" action="compte_c.php">
 		    	<label for="email">Email:</label>
-		    	<input type="email" id="email" class="champ_oui" name="mail" required>
+		    	<input type="email" id="email" class="champ_oui" name="mail-connect" required>
 		    	<label for="lname">Mot de passe:</label>
-		    	<input type="password" id="mdp" class="champ_oui" name="mot de passe" required>
+		    	<input type="password" id="mdp" class="champ_oui" name="mot-de-passe-connect" required>
 		    	<input type="submit" value="Connexion" class="connexion">
     		</form>
     	</div>
     	<div class="compte_oui">
-    		<h1>Créer votre compte</h1>
+    		<h1>Créez votre compte</h1>
     		<form class="form_oui" method="post" action="compte.php"> 
     			<label for="nom">Nom</label>
 		    	<input type="text" id="nom" class="champ" name="nom" required>

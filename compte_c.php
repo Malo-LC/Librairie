@@ -1,9 +1,9 @@
 <?php
 session_start();
-if(isset($_POST['mail'])==TRUE){
-	$_SESSION['mail']=$_POST['mail'];
-}
 
+if(isset($_POST['mail-connect'])==TRUE){
+	$_SESSION['mail']=$_POST['mail-connect'];
+}
 
 try
 {
@@ -13,54 +13,43 @@ catch(Exception $e)
 {
     die('Erreur : '.$e->getMessage());
 }
-if (isset($_POST['nom'])==TRUE){
-	$_SESSION['nom'] = $_POST['nom'];
-	$nom = $_POST['nom'];
+if (isset($_POST['mot-de-passe-connect'])==TRUE){
+	$mdp_c = $_POST['mot-de-passe-connect'];
 }
-if (isset($_POST['prenom'])==TRUE){
-	$_SESSION['prenom'] = $_POST['prenom'];
-	$prenom = $_POST['prenom'];
+if (isset($_POST['mail-connect'])==TRUE){
+	$mail_c = $_POST['mail-connect'];
 }
-if (isset($_POST['mail'])==TRUE){
-	$_SESSION['email'] = $_POST['mail'];
-	$mail = $_POST['mail'];
-}
-if (isset($_POST['mot_de_passe'])==TRUE){
-	$_SESSION['mdp'] = $_POST['mot_de_passe'];
-	$mdp = $_POST['mot_de_passe'];
-}
-
-
-$verif=TRUE;
+$verif=FALSE;
 
 
 $reponse = $bdd->query('SELECT * FROM coordonnee');
 $donnees = $reponse->fetch();
 
-do if(isset($mail)!=FALSE){
-	if($donnees['Email']==$mail){
-		$verif=FALSE;
+do{
+	if($donnees['Email']==$mail_c){
+		$verif=TRUE;
+		$mdp=$donnees['MDP'];
+		$_SESSION['email']=$donnees['Email'];
+		$_SESSION['nom']=$donnees['Nom'];
+		$_SESSION['prenom']=$donnees['Prenom'];
+
 	}
 }
 while($donnees = $reponse->fetch());
 
-
 if($verif==FALSE){
-	header('Location: redirection.php');
+	header('Location: redirection_c.php');
+}
+
+
+if($mdp!=$mdp_c){
+header('Location: redirection_c.php');
 }
 
 
 
-if(isset($mdp)==TRUE && isset($nom)==TRUE && isset($prenom)==TRUE && isset($mail)==TRUE && $verif==TRUE)
-{
-	$req = $bdd->prepare('INSERT INTO coordonnee(Nom, Prenom, Email, MDP) VALUES (:nom, :prenom, :mail, :mdp)'); 
-	$req->execute(array(
-	'nom' => $nom,
-	'prenom' => $prenom,
-	'mail' => $mail,
-	'mdp' => $mdp
-	));
-}
+
+
 
 
 
