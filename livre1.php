@@ -29,38 +29,24 @@ session_start();
 	
     
 
+<br>
+<?php $path = $_SERVER['PHP_SELF']; // $path = /home/httpd/html/index.php
+$file = basename ($path);
+echo"$file"; // index.php ?>
+
+<br>
+
+
+	
+
+
 
 
 
 	
 
-	
 
 
-	<div id="vitrine">
-		<div class="presentoir">
-		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
-		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
-		</div>
-		<div class="presentoir">
-		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
-		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
-		</div>
-				<div class="presentoir">
-		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
-		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
-		</div>
-				<div class="presentoir">
-		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
-		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
-		</div>
-				<div class="presentoir">
-		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
-		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
-		</div>
-	</div>
-
-<div id="conteneur">
 	<p> A PROPOS DE LA LIBRAIRIE </p>
 	<br>
 	<br>

@@ -12,6 +12,7 @@ body{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: top;
+  flex-wrap: wrap;
 }
 .logo{
 	padding: 0;
@@ -84,31 +85,36 @@ li.toolbar:last-child {
 	text-align: center;
 }
 .couverure{
-  width: 182px;
-  height: 267px;  
+  width: 280px;
+  height: auto;
+  align-content: center;
+  display: flex;
 }
 .livretab{
-  width: 182px;
-  height: 267px;
-  float: left;
+  width: 100%;
+  align-items: center;
 }
 .presentoir{
-  width: 182px;
+  width: 15%;
+  height: 500px;
+  min-width: 280px;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   background-color: lightgrey;
   padding: 5px;
-  justify-content: flex-start;
+  margin: 0;
+  justify-content: center;
   align-items: center;
-  margin-right: 30px;
+  margin-right: 60px;
+  margin-left: 60px;
 }
 .presentoir:nth-last-child(1){
   margin:0;
 }
 .presentoir p{
+  margin-top: 3px;
   margin: 0;
-  margin-left: 5px;
-  margin-right: 85px;
+
   letter-spacing: 1px;
 }
 .ajout_panier{
@@ -144,6 +150,12 @@ ul.social li{
 	display: flex;
 	flex-direction: row;
   flex-wrap: wrap;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 

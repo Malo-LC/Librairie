@@ -29,30 +29,57 @@ session_start();
 		<li class="toolbar left" style="float:right"><a href="Cadeaux.php">À propos</a></li>
     </ul>
 
+<?php 
+try
+{
+	$bdd = new PDO('mysql:host=localhost;dbname=librairie;charset=utf8', 'root', '');
+}
+catch(Exception $e)
+{
+        die('Erreur : '.$e->getMessage());
+}
+$reponse = $bdd->query('SELECT * FROM livres');
+$donnees = $reponse->fetch();
 
+
+do{
+	if($donnees['ID']==1){
+		$id=$donnees['ID'];
+		$titre1=$donnees['titre'];
+		$auteur1=$donnees['auteur'];
+		$photo1=$donnees['photo'];
+		$resume1=$donnees['synopsis'];
+
+	}
+	if($donnees['ID']==2){
+		$titre2=$donnees['titre'];
+		$auteur2=$donnees['auteur'];
+		$photo2=$donnees['photo'];
+		$resume2=$donnees['synopsis'];
+	}
+}
+while($donnees = $reponse->fetch());
+
+?>
+
+	
+	
 
 	<div id="vitrine">
 		<div class="presentoir">
-		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
-		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
+		<div class="couverure"><a href="livre<?php echo $photo1;?>.php"><img src="<?php echo $photo1;?>" alt="Livre" class="livretab"></a></div>
+		<div class="flex"><p><?php  echo $auteur1; ?></p><p><?php echo $titre1; ?></p></div>
 		</div>
 		<div class="presentoir">
-		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
-		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
+		<div class="couverure"><a href="Cadeaux.php"><img src="<?php echo $photo2;?>" alt="Livre" class="livretab"></a></div>
+		<div class="flex"><p><?php  echo $auteur2; ?></p><p><?php echo $titre2; ?></p></div>
 		</div>
-				<div class="presentoir">
-		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
-		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
-		</div>
-				<div class="presentoir">
-		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
-		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
-		</div>
-				<div class="presentoir">
-		<div class="couverure"><img src="livre.jpg" alt="Livre" class="livretab"></div>
-		<p>9.99€</p>	<img class="ajout_panier" alt="Panier" src="cart.png">
-		</div>
+
+
+		
 	</div>
+
+	
 
 
 

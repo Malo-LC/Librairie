@@ -3,7 +3,7 @@ session_start();
 if(isset($_SESSION['mail'])==TRUE){
 	header('Location: compte.php');
 }
-echo $_SESSION['mail'];
+
 ?>
 
 <!DOCTYPE html>
