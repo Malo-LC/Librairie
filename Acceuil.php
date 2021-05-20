@@ -17,7 +17,6 @@ session_start();
 
 <body>
 	<?php include("entete.php"); ?>
-	<p> test</p>
 	
 		
 		
@@ -58,6 +57,12 @@ do{
 		$photo2=$donnees['photo'];
 		$resume2=$donnees['synopsis'];
 	}
+	if($donnees['ID']==3){
+		$titre3=$donnees['titre'];
+		$auteur3=$donnees['auteur'];
+		$photo3=$donnees['photo'];
+		$resume3=$donnees['synopsis'];
+	}
 }
 while($donnees = $reponse->fetch());
 
@@ -74,6 +79,10 @@ while($donnees = $reponse->fetch());
 		<div class="presentoir">
 		<div class="couverure"><a href="Cadeaux.php"><img src="<?php echo $photo2;?>" alt="Livre" class="livretab"></a></div>
 		<div class="flex"><p><?php  echo $auteur2; ?></p><p><?php echo $titre2; ?></p></div>
+		</div>
+		<div class="presentoir">
+		<div class="couverure"><a href="Cadeaux.php"><img src="<?php echo $photo3;?>" alt="Livre" class="livretab"></a></div>
+		<div class="flex"><p><?php  echo $auteur3; ?></p><p><?php echo $titre3; ?></p></div>
 		</div>
 
 
