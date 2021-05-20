@@ -17,6 +17,7 @@ session_start();
 
 <body>
 	<?php include("entete.php"); ?>
+	<p> test</p>
 	
 		
 		
