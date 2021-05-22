@@ -22,6 +22,9 @@ body{
 	margin-right: 5px;
 	margin-left: 5px;
 }
+.hotbar{
+  z-index: 1000; 
+}
 ul.hotbar {
   list-style-type: none;
   margin: 0;

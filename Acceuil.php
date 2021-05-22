@@ -10,6 +10,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="stylelibrairie.css" />
     <link rel="icon" type="image/png" sizes="16x16" href="icone.png">
     <meta name="viewport" content="width=device-width">
+    <LINK rel="stylesheet" type="text/css" href="carousel.css" media="screen" />
 
 </head>
 
@@ -90,6 +91,23 @@ while($donnees = $reponse->fetch());
 
 		
 	</div>
+
+	<div id="slider" style="z-index: 1">
+	<ul id="contenu_slider" style="z-index: 1">
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel " alt="Alien" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avatar" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avengers" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Alien" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avatar" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avengers" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Alien" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avatar" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avengers" /></a></li>
+	</ul>
+</div>
+
+
+</script>
 
 	
 
