@@ -117,7 +117,7 @@ li.toolbar:last-child {
 .presentoir p{
   margin-top: 3px;
   margin: 0;
-
+  text-align: center;
   letter-spacing: 1px;
 }
 .ajout_panier{
