@@ -119,6 +119,7 @@ li.toolbar:last-child {
   margin: 0;
   text-align: center;
   letter-spacing: 1px;
+  font-size: 15px;
 }
 .ajout_panier{
   height: 40px;
