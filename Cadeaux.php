@@ -82,39 +82,20 @@ while($donnees = $reponse->fetch());
 	</div>
     
  
-    <input id="searchbar" onkeyup="search_animal()" type="text"
+    <input id="searchbar" onkeyup="search_livre()" type="text"
         name="search" placeholder="Chercher un livre..">
       
     
     <ol id='list'>
-        <li class="livres">Cat</li>
-        <li class="livres">Dog</li>
+        <li class="livres"><a href="livre<?php $ID=1; echo $livre[$ID][1]; ?>.php"><?php echo $livre[$ID][2]; $ID++; ?></a></li>
+        <li class="livres"><a href="livre<?php echo $livre[$ID][1]; ?>.php"><?php echo $livre[$ID][2]; $ID++; ?></a></li>
+        <li class="livres"><a href="livre<?php echo $livre[$ID][1]; ?>.php"><?php echo $livre[$ID][2]; $ID++; ?></a></li>
     </ol>
       
     <script type="text/javascript">
-    	<?php $ID=1; ?>
-    	function ajouter(){
-    		var liste =document.getElementById("list");
-    		var titre = document.createElement('li');
-    		var lien = document.createElement('a');
-    		var txt = '<?php echo $livre[$ID][2]; ?>';
-    		var lientxt = 'livre'+'<?php echo $livre[$ID][1]; $ID++; ?>'+'.php';
-    		lien.href=lientxt;
-    		titre.setAttribute( 'class', 'livres' );
-    		lien.textContent= txt;
-    		titre.appendChild(lien);
-    		liste.appendChild(titre);
-    		
-
-
-    	}
-    	var n = '<?php echo $nb_id; ?>';
-    	for( i = 0 ; i < n ; i ++){
-    		ajouter();
-
-    	}
     	
-function search_animal() {
+    	
+function search_livre() {
     let input = document.getElementById('searchbar').value
     input=input.toLowerCase();
     let x = document.getElementsByClassName('livres');
