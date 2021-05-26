@@ -17,10 +17,7 @@ session_start();
 
 
 <body>
-	<?php include("entete.php"); ?>
-	
-		
-		
+	<?php include("entete.php"); ?>	
 	<ul class="hotbar">
 		<li class="toolbar active" ><a href="Acceuil.php">Accueil</a></li>
 		<li class="toolbar"><a href="Librairie.php">Librairie</a></li>
@@ -62,12 +59,10 @@ do{
 } while($donnees = $reponse->fetch());
 
 ?>
+	
 
-	
-	
-<div id="conteneur">
-	<h3> Les dernières sorties </h3>
-</div>
+	<h2> Les nouveautés sur le site </h2>
+<div class="conteneur_slider">
 <div id="slider" style="z-index: 1">
 	<ul id="contenu_slider" style="z-index: 1">
 		<li><a href="livre<?php $ID=1; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
@@ -81,13 +76,12 @@ do{
 		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel" alt="Livre" /></a></li>
 	</ul>
 </div>
-
-
-
- <div id="conteneur">
-	<h3> Nouveautés jeunesse </h3>
 </div>
 
+
+ 
+	<h2> Nouveautés jeunesse </h2>
+<div class="conteneur_slider">
 <div id="slider" style="z-index: 1">
 	<ul id="contenu_slider" style="z-index: 1">
 		<li><a href="livre<?php $ID=16; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
@@ -100,11 +94,11 @@ do{
 		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
 		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
 </div>
+</div>
+	
+		<h2> Livres ayant reçu un prix en 2020 </h2>
 
-	<div id="conteneur">
-		<h3> Livres ayant reçu un prix en 2020 </h3>
-	</div>
-
+<div class="conteneur_slider">
 	<div id="slider" style="z-index: 1">
 	<ul id="contenu_slider" style="z-index: 1">
 		<li><a href="livre<?php $ID=18; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
@@ -118,7 +112,7 @@ do{
 		<li><a href="livre<?php $ID=1; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
 	</ul>
 </div>
-
+</div>
 
 <?php include("footer.php"); ?>
 

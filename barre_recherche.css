@@ -1,24 +1,30 @@
   #searchbar{
-     margin-left: 15%;
+     
      padding:15px;
      border-radius: 10px;
+     align-content: center;
    }
    input[type=text] {
       width: 30%;
-      -webkit-transition: width 0.15s ease-in-out;
-      transition: width 0.15s ease-in-out;
+    
+    
    }
-   input[type=text]:focus {
-     width: 70%;
-   }
+  
   #list{
     display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin: 0 10%;
+    justify-content: center;
    }
 #list li{
 	font-family: verdana;
 	list-style: none;
 	text-decoration: none;
-	margin:  10px 10px;
+	margin:  30px 30px;
+  width: 280px;
+  height: auto;
+
 }
 li.livres a {
     color: black;
@@ -32,4 +38,8 @@ h1 {
   margin: 10px 0 20px;
   text-transform: uppercase;
   text-align: center;
+}
+.centre{
+  display: flex;
+  justify-content: center;
 }

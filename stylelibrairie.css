@@ -17,11 +17,7 @@ body{
 .logo{
 	padding: 0;
 }
-#conteneur{
-	text-align: justify;
-	margin-right: 5px;
-	margin-left: 5px;
-}
+
 .hotbar{
   z-index: 1000; 
 }
@@ -161,7 +157,32 @@ ul.social li{
   justify-content: space-between;
   align-items: center;
 }
+h2 {
+  color: #2F2C57;
+  font-family: 'Source Sans Pro', 
+  sans-serif; font-size: 28px; 
+  font-weight: 400; 
+  line-height: 32px; 
+  margin: 0 0 10px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+}
 
+h2:before{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  border-bottom: double black;
+}
+
+h2, p {
+    margin-left: 20%;
+    margin-top: 20px;
+}
 
 
 
