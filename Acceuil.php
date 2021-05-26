@@ -124,72 +124,95 @@ while($donnees = $reponse->fetch());
 	
 <div id="conteneur">
 	<h3> Les dernières sorties </h3>
-	</div>
+</div>
 	<div id="vitrine">
 		<div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $photo1;?>.php"><img src="<?php echo $photo1;?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php  echo $auteur1; ?></p><p><?php echo $titre1; ?></p></div>
+			<div class="couverure"><a href="livre<?php echo $photo1;?>.php"><img src="<?php echo $photo1;?>" alt="Livre" class="livretab"></a></div>
+			<div class="flex"><p><?php  echo $auteur1; ?></p><p><?php echo $titre1; ?></p></div>
 		</div>
-		<div class="presentoir">
-		<div class="couverure"><a href="Cadeaux.php"><img src="<?php echo $photo2;?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php  echo $auteur2; ?></p><p><?php echo $titre2; ?></p></div>
-		</div>
-		<div class="presentoir">
-		<div class="couverure"><a href="Cadeaux.php"><img src="<?php echo $photo3;?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php  echo $auteur3; ?></p><p><?php echo $titre3; ?></p></div>
-		</div>
+			<div class="presentoir">
+				<div class="couverure"><a href="Cadeaux.php"><img src="<?php echo $photo2;?>" alt="Livre" class="livretab"></a></div>
+				<div class="flex"><p><?php  echo $auteur2; ?></p><p><?php echo $titre2; ?></p></div>
+			</div>
+			<div class="presentoir">
+				<div class="couverure"><a href="Cadeaux.php"><img src="<?php echo $photo3;?>" alt="Livre" class="livretab"></a></div>
+				<div class="flex"><p><?php  echo $auteur3; ?></p><p><?php echo $titre3; ?></p></div>
+			</div>
 	</div>
 
 
 	
 
 
-		<div id="conteneur">
+<div id="conteneur">
 	<h3> Nouveautés jeunesse </h3>
-	</div>
+</div>
 	<div id="vitrine">
 		<div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $photo16;?>.php"><img src="<?php echo $photo16;?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php  echo $auteur16; ?></p><p><?php echo $titre16; ?></p></div>
+			<div class="couverure"><a href="livre<?php echo $photo16;?>.php"><img src="<?php echo $photo16;?>" alt="Livre" class="livretab"></a></div>
+			<div class="flex"><p><?php  echo $auteur16; ?></p><p><?php echo $titre16; ?></p></div>
 		</div>
 		<div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $photo17;?>.php"><img src="<?php echo $photo17;?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php  echo $auteur17; ?></p><p><?php echo $titre17; ?></p></div>
+			<div class="couverure"><a href="livre<?php echo $photo17;?>.php"><img src="<?php echo $photo17;?>" alt="Livre" class="livretab"></a></div>
+			<div class="flex"><p><?php  echo $auteur17; ?></p><p><?php echo $titre17; ?></p></div>
 		</div>
 		<div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $photo22;?>.php"><img src="<?php echo $photo22;?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php  echo $auteur22; ?></p><p><?php echo $titre22; ?></p></div>
+			<div class="couverure"><a href="livre<?php echo $photo22;?>.php"><img src="<?php echo $photo22;?>" alt="Livre" class="livretab"></a></div>
+			<div class="flex"><p><?php  echo $auteur22; ?></p><p><?php echo $titre22; ?></p></div>
 		</div>
 		<div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $photo23;?>.php"><img src="<?php echo $photo23;?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php  echo $auteur23; ?></p><p><?php echo $titre23; ?></p></div>
+			<div class="couverure"><a href="livre<?php echo $photo23;?>.php"><img src="<?php echo $photo23;?>" alt="Livre" class="livretab"></a></div>
+			<div class="flex"><p><?php  echo $auteur23; ?></p><p><?php echo $titre23; ?></p></div>
 		</div>
+	</div>
 		
-		<br>
+	
 
 	<div id="conteneur">
-	<h3> Livres ayant reçu un prix en 2020 </h3>
+		<h3> Livres ayant reçu un prix en 2020 </h3>
 	</div>
 	<div id="vitrine">
 		<div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $photo18;?>.php"><img src="<?php echo $photo18;?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php  echo $auteur18; ?></p><p><?php echo $titre18; ?></p></div>
+			<div class="couverure"><a href="livre<?php echo $photo18;?>.php"><img src="<?php echo $photo18;?>" alt="Livre" class="livretab"></a></div>
+			<div class="flex"><p><?php  echo $auteur18; ?></p><p><?php echo $titre18; ?></p></div>
 		</div>
 		<div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $photo19;?>.php"><img src="<?php echo $photo19;?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php  echo $auteur19; ?></p><p><?php echo $titre19; ?></p></div>
+			<div class="couverure"><a href="livre<?php echo $photo19;?>.php"><img src="<?php echo $photo19;?>" alt="Livre" class="livretab"></a></div>
+			<div class="flex"><p><?php  echo $auteur19; ?></p><p><?php echo $titre19; ?></p></div>
 		</div>
 		<div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $photo20;?>.php"><img src="<?php echo $photo20;?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php  echo $auteur20; ?></p><p><?php echo $titre20; ?></p></div>
+			<div class="couverure"><a href="livre<?php echo $photo20;?>.php"><img src="<?php echo $photo20;?>" alt="Livre" class="livretab"></a></div>
+			<div class="flex"><p><?php  echo $auteur20; ?></p><p><?php echo $titre20; ?></p></div>
 		</div>
 		<div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $photo21;?>.php"><img src="<?php echo $photo21;?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php  echo $auteur21; ?></p><p><?php echo $titre21; ?></p></div>
+			<div class="couverure"><a href="livre<?php echo $photo21;?>.php"><img src="<?php echo $photo21;?>" alt="Livre" class="livretab"></a></div>
+			<div class="flex"><p><?php  echo $auteur21; ?></p><p><?php echo $titre21; ?></p></div>
 		</div>
-
-
+	</div>
 		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
 
 <?php include("footer.php"); ?>
 
