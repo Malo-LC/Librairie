@@ -86,8 +86,8 @@ li.toolbar:last-child {
 .couverure{
   width: 280px;
   height: auto;
-  align-content: center;
   display: flex;
+  justify-content: center;
 }
 .livretab{
   width: 100%;
@@ -99,7 +99,6 @@ li.toolbar:last-child {
   min-width: 280px;
   display: flex;
   flex-direction: column;
-  background-color: lightgrey;
   padding: 5px;
   margin: 0;
   justify-content: center;
