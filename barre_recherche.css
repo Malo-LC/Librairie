@@ -1,0 +1,35 @@
+  #searchbar{
+     margin-left: 15%;
+     padding:15px;
+     border-radius: 10px;
+   }
+   input[type=text] {
+      width: 30%;
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+   input[type=text]:focus {
+     width: 70%;
+   }
+  #list{
+    display: flex;
+   }
+#list li{
+	font-family: verdana;
+	list-style: none;
+	text-decoration: none;
+	margin:  10px 10px;
+}
+li.livres a {
+    color: black;
+    text-decoration: none;
+}
+h1 {
+  color: black;
+  font-family: 'Righteous', cursive;
+  font-weight: normal;
+  line-height: 60px;
+  margin: 10px 0 20px;
+  text-transform: uppercase;
+  text-align: center;
+}

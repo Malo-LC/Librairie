@@ -1,0 +1,35 @@
+/*p{font-size: 20px}*/
+.vitrine_livre{
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.presentoir_livre{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: lightgrey;
+	flex-wrap: inherit;
+	padding: 20px;
+
+	width: 90%;
+}
+.flex_livre{
+	margin-left: 20px;
+	width: 65%;
+}
+
+
+.couverure_livre{
+  width: 20%;
+  height: auto;
+
+}
+.livretab_livre{
+  width: 100%;
+  height: auto;
+}

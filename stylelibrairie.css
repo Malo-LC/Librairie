@@ -22,6 +22,9 @@ body{
 	margin-right: 5px;
 	margin-left: 5px;
 }
+.hotbar{
+  z-index: 1000; 
+}
 ul.hotbar {
   list-style-type: none;
   margin: 0;
@@ -114,8 +117,9 @@ li.toolbar:last-child {
 .presentoir p{
   margin-top: 3px;
   margin: 0;
-
+  text-align: center;
   letter-spacing: 1px;
+  font-size: 15px;
 }
 .ajout_panier{
   height: 40px;

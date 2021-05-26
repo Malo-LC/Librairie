@@ -10,6 +10,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="stylelibrairie.css" />
     <link rel="icon" type="image/png" sizes="16x16" href="icone.png">
     <meta name="viewport" content="width=device-width">
+    <LINK rel="stylesheet" type="text/css" href="carousel.css" media="screen" />
 
 </head>
 
@@ -42,7 +43,7 @@ $donnees = $reponse->fetch();
 
 do{
 	if($donnees['ID']==1){
-		$id=$donnees['ID'];
+		$id1=$donnees['ID'];
 		$titre1=$donnees['titre'];
 		$auteur1=$donnees['auteur'];
 		$photo1=$donnees['photo'];
@@ -50,12 +51,14 @@ do{
 
 	}
 	if($donnees['ID']==2){
+		$id2=$donnees['ID'];
 		$titre2=$donnees['titre'];
 		$auteur2=$donnees['auteur'];
 		$photo2=$donnees['photo'];
 		$resume2=$donnees['synopsis'];
 	}
 	if($donnees['ID']==3){
+		$id3=$donnees['ID'];
 		$titre3=$donnees['titre'];
 		$auteur3=$donnees['auteur'];
 		$photo3=$donnees['photo'];
@@ -149,6 +152,7 @@ while($donnees = $reponse->fetch());
 </div>
 	<div id="vitrine">
 		<div class="presentoir">
+<<<<<<< HEAD
 			<div class="couverure"><a href="livre<?php echo $photo16;?>.php"><img src="<?php echo $photo16;?>" alt="Livre" class="livretab"></a></div>
 			<div class="flex"><p><?php  echo $auteur16; ?></p><p><?php echo $titre16; ?></p></div>
 		</div>
@@ -159,6 +163,18 @@ while($donnees = $reponse->fetch());
 		<div class="presentoir">
 			<div class="couverure"><a href="livre<?php echo $photo22;?>.php"><img src="<?php echo $photo22;?>" alt="Livre" class="livretab"></a></div>
 			<div class="flex"><p><?php  echo $auteur22; ?></p><p><?php echo $titre22; ?></p></div>
+=======
+		<div class="couverure"><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" alt="Livre" class="livretab"></a></div>
+		<div class="flex"><p><?php  echo $auteur1; ?></p><p><?php echo $titre1; ?></p></div>
+		</div>
+		<div class="presentoir">
+		<div class="couverure"><a href="livre<?php echo $id2;?>.php"><img src="<?php echo $photo2;?>" alt="Livre" class="livretab"></a></div>
+		<div class="flex"><p><?php  echo $auteur2; ?></p><p><?php echo $titre2; ?></p></div>
+		</div>
+		<div class="presentoir">
+		<div class="couverure"><a href="livre<?php echo $id3;?>.php"><img src="<?php echo $photo3;?>" alt="Livre" class="livretab"></a></div>
+		<div class="flex"><p><?php  echo $auteur3; ?></p><p><?php echo $titre3; ?></p></div>
+>>>>>>> 8d3cefb2d84d91923e7b959808b8164bc6aafdf8
 		</div>
 		<div class="presentoir">
 			<div class="couverure"><a href="livre<?php echo $photo23;?>.php"><img src="<?php echo $photo23;?>" alt="Livre" class="livretab"></a></div>
@@ -191,6 +207,27 @@ while($donnees = $reponse->fetch());
 	</div>
 		
 
+<<<<<<< HEAD
+=======
+	<div id="slider" style="z-index: 1">
+	<ul id="contenu_slider" style="z-index: 1">
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel " alt="Alien" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avatar" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avengers" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Alien" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avatar" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avengers" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Alien" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avatar" /></a></li>
+		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avengers" /></a></li>
+	</ul>
+</div>
+
+
+</script>
+
+	
+>>>>>>> 8d3cefb2d84d91923e7b959808b8164bc6aafdf8
 
 
 

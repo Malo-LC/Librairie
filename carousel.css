@@ -1,0 +1,41 @@
+@keyframes AutoSlide {
+	0%, 20%, 100% {
+		left: 0px; /*1ère image*/
+	}
+	30%, 55% {
+		left: -100%; /*2ème image*/
+	}
+	65%, 90% {
+		left: -200%; /*3ème image*/
+	}
+}
+#slider { 
+	width: 840px;
+	height: 400px;
+	margin:  20px auto;
+	overflow: hidden;
+	z-index: -1;
+
+}
+
+#contenu_slider {
+	display: flex;
+	list-style-type: none;
+	position: relative;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 450px;
+	margin: 0;            
+	padding: 0;
+	/*CSS3 keyframes animation*/
+	animation-name: AutoSlide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+.livretab_carousel{
+  	align-items: center;
+  	width: 280px;
+    height: 400px;
+}
