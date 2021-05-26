@@ -67,6 +67,54 @@ do{
 		$photo4=$donnees['photo'];
 		$resume4=$donnees['synopsis'];
 	}
+	if($donnees['ID']==16){
+		$titre16=$donnees['titre'];
+		$auteur16=$donnees['auteur'];
+		$photo16=$donnees['photo'];
+		$resume16=$donnees['synopsis'];
+	}
+	if($donnees['ID']==17){
+		$titre17=$donnees['titre'];
+		$auteur17=$donnees['auteur'];
+		$photo17=$donnees['photo'];
+		$resume17=$donnees['synopsis'];
+	}
+	if($donnees['ID']==18){
+		$titre18=$donnees['titre'];
+		$auteur18=$donnees['auteur'];
+		$photo18=$donnees['photo'];
+		$resume18=$donnees['synopsis'];
+	}
+	if($donnees['ID']==19){
+		$titre19=$donnees['titre'];
+		$auteur19=$donnees['auteur'];
+		$photo19=$donnees['photo'];
+		$resume19=$donnees['synopsis'];
+	}
+	if($donnees['ID']==20){
+		$titre20=$donnees['titre'];
+		$auteur20=$donnees['auteur'];
+		$photo20=$donnees['photo'];
+		$resume18=$donnees['synopsis'];
+	}
+	if($donnees['ID']==21){
+		$titre21=$donnees['titre'];
+		$auteur21=$donnees['auteur'];
+		$photo21=$donnees['photo'];
+		$resume21=$donnees['synopsis'];
+	}
+	if($donnees['ID']==22){
+		$titre22=$donnees['titre'];
+		$auteur22=$donnees['auteur'];
+		$photo22=$donnees['photo'];
+		$resume22=$donnees['synopsis'];
+	}
+	if($donnees['ID']==23){
+		$titre23=$donnees['titre'];
+		$auteur23=$donnees['auteur'];
+		$photo23=$donnees['photo'];
+		$resume23=$donnees['synopsis'];
+	}
 }
 while($donnees = $reponse->fetch());
 
@@ -74,7 +122,9 @@ while($donnees = $reponse->fetch());
 
 	
 	
-
+<div id="conteneur">
+	<h3> Les dernières sorties </h3>
+	</div>
 	<div id="vitrine">
 		<div class="presentoir">
 		<div class="couverure"><a href="livre<?php echo $photo1;?>.php"><img src="<?php echo $photo1;?>" alt="Livre" class="livretab"></a></div>
@@ -88,36 +138,58 @@ while($donnees = $reponse->fetch());
 		<div class="couverure"><a href="Cadeaux.php"><img src="<?php echo $photo3;?>" alt="Livre" class="livretab"></a></div>
 		<div class="flex"><p><?php  echo $auteur3; ?></p><p><?php echo $titre3; ?></p></div>
 		</div>
-
-
-		
 	</div>
 
+
+	
+
+
+		<div id="conteneur">
+	<h3> Nouveautés jeunesse </h3>
+	</div>
 	<div id="vitrine">
 		<div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $photo4;?>.php"><img src="<?php echo $photo4;?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php  echo $auteur4; ?></p><p><?php echo $titre4; ?></p></div>
+		<div class="couverure"><a href="livre<?php echo $photo16;?>.php"><img src="<?php echo $photo16;?>" alt="Livre" class="livretab"></a></div>
+		<div class="flex"><p><?php  echo $auteur16; ?></p><p><?php echo $titre16; ?></p></div>
+		</div>
+		<div class="presentoir">
+		<div class="couverure"><a href="livre<?php echo $photo17;?>.php"><img src="<?php echo $photo17;?>" alt="Livre" class="livretab"></a></div>
+		<div class="flex"><p><?php  echo $auteur17; ?></p><p><?php echo $titre17; ?></p></div>
+		</div>
+		<div class="presentoir">
+		<div class="couverure"><a href="livre<?php echo $photo22;?>.php"><img src="<?php echo $photo22;?>" alt="Livre" class="livretab"></a></div>
+		<div class="flex"><p><?php  echo $auteur22; ?></p><p><?php echo $titre22; ?></p></div>
+		</div>
+		<div class="presentoir">
+		<div class="couverure"><a href="livre<?php echo $photo23;?>.php"><img src="<?php echo $photo23;?>" alt="Livre" class="livretab"></a></div>
+		<div class="flex"><p><?php  echo $auteur23; ?></p><p><?php echo $titre23; ?></p></div>
+		</div>
+		
+		<br>
+
+	<div id="conteneur">
+	<h3> Livres ayant reçu un prix en 2020 </h3>
+	</div>
+	<div id="vitrine">
+		<div class="presentoir">
+		<div class="couverure"><a href="livre<?php echo $photo18;?>.php"><img src="<?php echo $photo18;?>" alt="Livre" class="livretab"></a></div>
+		<div class="flex"><p><?php  echo $auteur18; ?></p><p><?php echo $titre18; ?></p></div>
+		</div>
+		<div class="presentoir">
+		<div class="couverure"><a href="livre<?php echo $photo19;?>.php"><img src="<?php echo $photo19;?>" alt="Livre" class="livretab"></a></div>
+		<div class="flex"><p><?php  echo $auteur19; ?></p><p><?php echo $titre19; ?></p></div>
+		</div>
+		<div class="presentoir">
+		<div class="couverure"><a href="livre<?php echo $photo20;?>.php"><img src="<?php echo $photo20;?>" alt="Livre" class="livretab"></a></div>
+		<div class="flex"><p><?php  echo $auteur20; ?></p><p><?php echo $titre20; ?></p></div>
+		</div>
+		<div class="presentoir">
+		<div class="couverure"><a href="livre<?php echo $photo21;?>.php"><img src="<?php echo $photo21;?>" alt="Livre" class="livretab"></a></div>
+		<div class="flex"><p><?php  echo $auteur21; ?></p><p><?php echo $titre21; ?></p></div>
 		</div>
 
 
-
-
-	<div id="conteneur">
-        <div class="element"><p class="carreblanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie luctus justo sed vulputate. Sed luctus finibus sollicitudin. Pellentesque consectetur tempor elit quis facilisis. Quisque convallis dui turpis, in dapibus tellus suscipit quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec rhoncus tincidunt mauris, a lobortis dui luctus nec. Nulla volutpat ac justo quis sagittis. Maecenas sit amet est in magna semper ullamcorper. Donec nunc ex, condimentum in nisi pellentesque, mattis laoreet eros. Nullam sit amet ligula dignissim elit ullamcorper laoreet. Ut pulvinar imperdiet nunc, eu semper massa vulputate et. Duis at hendrerit urna, eu malesuada justo. Phasellus sit amet lectus quis nunc iaculis feugiat.</p></div>
-        <div class="element"><p class="carreblanc">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eu auctor elit. Mauris sem risus, sodales a dapibus eu, pellentesque vitae nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam lobortis pharetra sapien, quis lacinia neque sodales quis. Maecenas vestibulum purus sit amet ligula malesuada blandit. Proin vestibulum ullamcorper lorem, et semper libero ornare nec. Suspendisse porttitor iaculis fringilla. Nulla facilisi. Fusce tempus euismod ligula. Morbi viverra ligula sed diam fringilla, non ornare risus euismod. Nam laoreet nec dolor sit amet bibendum. Phasellus egestas placerat consequat.</p></div>
-        <div class="element"><p class="carreblanc">Vestibulum interdum placerat auctor. Vestibulum elementum ullamcorper arcu eget vestibulum. Duis sit amet nibh bibendum odio interdum dapibus sed id ipsum. Ut tincidunt pellentesque dolor ut tincidunt. Praesent sed aliquet quam, ut molestie nulla. Cras rutrum, nibh in molestie pretium, diam mi dignissim libero, et semper elit mauris non tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus vulputate eros est, a auctor felis consequat eget.</p></div>
-        <div class="element"><p class="carreblanc">Integer quis consectetur tellus. Quisque ac mollis tortor. Nullam sed tortor commodo, hendrerit augue non, pharetra felis. Sed vitae efficitur eros. Fusce cursus semper urna eu consequat. In nec sapien a metus porttitor finibus. Donec semper diam id lacus blandit ullamcorper id id ligula. Phasellus faucibus dui non sem bibendum, vitae facilisis massa pulvinar. Donec pharetra scelerisque magna, at luctus quam elementum et. Curabitur pretium metus bibendum, dignissim sapien ac, scelerisque lacus.</p></div>
-        
-</div>
-<div id="conteneur">
-        <div class="element"><p class="carreblanc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie luctus justo sed vulputate. Sed luctus finibus sollicitudin. Pellentesque consectetur tempor elit quis facilisis. Quisque convallis dui turpis, in dapibus tellus suscipit quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec rhoncus tincidunt mauris, a lobortis dui luctus nec. Nulla volutpat ac justo quis sagittis. Maecenas sit amet est in magna semper ullamcorper. Donec nunc ex, condimentum in nisi pellentesque, mattis laoreet eros. Nullam sit amet ligula dignissim elit ullamcorper laoreet. Ut pulvinar imperdiet nunc, eu semper massa vulputate et. Duis at hendrerit urna, eu malesuada justo. Phasellus sit amet lectus quis nunc iaculis feugiat.</p></div>
-        <div class="element"><p class="carreblanc">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eu auctor elit. Mauris sem risus, sodales a dapibus eu, pellentesque vitae nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam lobortis pharetra sapien, quis lacinia neque sodales quis. Maecenas vestibulum purus sit amet ligula malesuada blandit. Proin vestibulum ullamcorper lorem, et semper libero ornare nec. Suspendisse porttitor iaculis fringilla. Nulla facilisi. Fusce tempus euismod ligula. Morbi viverra ligula sed diam fringilla, non ornare risus euismod. Nam laoreet nec dolor sit amet bibendum. Phasellus egestas placerat consequat.</p></div>
-        <div class="element"><p class="carreblanc">Vestibulum interdum placerat auctor. Vestibulum elementum ullamcorper arcu eget vestibulum. Duis sit amet nibh bibendum odio interdum dapibus sed id ipsum. Ut tincidunt pellentesque dolor ut tincidunt. Praesent sed aliquet quam, ut molestie nulla. Cras rutrum, nibh in molestie pretium, diam mi dignissim libero, et semper elit mauris non tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus vulputate eros est, a auctor felis consequat eget.</p></div>
-        <div class="element"><p class="carreblanc">Integer quis consectetur tellus. Quisque ac mollis tortor. Nullam sed tortor commodo, hendrerit augue non, pharetra felis. Sed vitae efficitur eros. Fusce cursus semper urna eu consequat. In nec sapien a metus porttitor finibus. Donec semper diam id lacus blandit ullamcorper id id ligula. Phasellus faucibus dui non sem bibendum, vitae facilisis massa pulvinar. Donec pharetra scelerisque magna, at luctus quam elementum et. Curabitur pretium metus bibendum, dignissim sapien ac, scelerisque lacus.</p></div>
-        
-</div>
-
-
+		
 
 <?php include("footer.php"); ?>
 
