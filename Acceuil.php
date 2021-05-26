@@ -39,87 +39,27 @@ catch(Exception $e)
 }
 $reponse = $bdd->query('SELECT * FROM livres');
 $donnees = $reponse->fetch();
+$reponse1 = $bdd->query('SELECT * FROM livres');
+$donnees1 = $reponse1->fetch();
 
+$i=1;
+$nb_id=0;
+do{
+	$nb_id++;
+} while($donnees1 = $reponse1->fetch());
+
+$livre = array_fill(1,$nb_id,array_fill(1,5,0));
 
 do{
-	if($donnees['ID']==1){
-		$id1=$donnees['ID'];
-		$titre1=$donnees['titre'];
-		$auteur1=$donnees['auteur'];
-		$photo1=$donnees['photo'];
-		$resume1=$donnees['synopsis'];
-
+	if($donnees['ID']==$i){
+		$livre[$i][1]=$i;
+		$livre[$i][2]=$donnees['titre'];
+		$livre[$i][3]=$donnees['auteur'];
+		$livre[$i][4]=$donnees['photo'];
+		$livre[$i][5]=$donnees['synopsis'];
 	}
-	if($donnees['ID']==2){
-		$id2=$donnees['ID'];
-		$titre2=$donnees['titre'];
-		$auteur2=$donnees['auteur'];
-		$photo2=$donnees['photo'];
-		$resume2=$donnees['synopsis'];
-	}
-	if($donnees['ID']==3){
-		$id3=$donnees['ID'];
-		$titre3=$donnees['titre'];
-		$auteur3=$donnees['auteur'];
-		$photo3=$donnees['photo'];
-		$resume3=$donnees['synopsis'];
-	}
-	if($donnees['ID']==4){
-		$titre4=$donnees['titre'];
-		$auteur4=$donnees['auteur'];
-		$photo4=$donnees['photo'];
-		$resume4=$donnees['synopsis'];
-	}
-	if($donnees['ID']==16){
-		$titre16=$donnees['titre'];
-		$auteur16=$donnees['auteur'];
-		$photo16=$donnees['photo'];
-		$resume16=$donnees['synopsis'];
-	}
-	if($donnees['ID']==17){
-		$titre17=$donnees['titre'];
-		$auteur17=$donnees['auteur'];
-		$photo17=$donnees['photo'];
-		$resume17=$donnees['synopsis'];
-	}
-	if($donnees['ID']==18){
-		$titre18=$donnees['titre'];
-		$auteur18=$donnees['auteur'];
-		$photo18=$donnees['photo'];
-		$resume18=$donnees['synopsis'];
-	}
-	if($donnees['ID']==19){
-		$titre19=$donnees['titre'];
-		$auteur19=$donnees['auteur'];
-		$photo19=$donnees['photo'];
-		$resume19=$donnees['synopsis'];
-	}
-	if($donnees['ID']==20){
-		$titre20=$donnees['titre'];
-		$auteur20=$donnees['auteur'];
-		$photo20=$donnees['photo'];
-		$resume18=$donnees['synopsis'];
-	}
-	if($donnees['ID']==21){
-		$titre21=$donnees['titre'];
-		$auteur21=$donnees['auteur'];
-		$photo21=$donnees['photo'];
-		$resume21=$donnees['synopsis'];
-	}
-	if($donnees['ID']==22){
-		$titre22=$donnees['titre'];
-		$auteur22=$donnees['auteur'];
-		$photo22=$donnees['photo'];
-		$resume22=$donnees['synopsis'];
-	}
-	if($donnees['ID']==23){
-		$titre23=$donnees['titre'];
-		$auteur23=$donnees['auteur'];
-		$photo23=$donnees['photo'];
-		$resume23=$donnees['synopsis'];
-	}
-}
-while($donnees = $reponse->fetch());
+	$i++;
+} while($donnees = $reponse->fetch());
 
 ?>
 
@@ -130,81 +70,36 @@ while($donnees = $reponse->fetch());
 </div>
 <div id="slider" style="z-index: 1">
 	<ul id="contenu_slider" style="z-index: 1">
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel " alt="Alien" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avatar" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avengers" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Alien" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avatar" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avengers" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Alien" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avatar" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avengers" /></a></li>
+		<li><a href="livre<?php $ID=1; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel" alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel" alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel" alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel" alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel" alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel" alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel" alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel" alt="Livre" /></a></li>
 	</ul>
 </div>
 
 
-<!--
 
-	<div id="vitrine">
-		<div class="presentoir">
-			<div class="couverure"><a href="livre<?php echo $photo1;?>.php"><img src="<?php echo $photo1;?>" alt="Livre" class="livretab"></a></div>
-			<div class="flex"><p><?php  echo $auteur1; ?></p><p><?php echo $titre1; ?></p></div>
-		</div>
-			<div class="presentoir">
-				<div class="couverure"><a href="Cadeaux.php"><img src="<?php echo $photo2;?>" alt="Livre" class="livretab"></a></div>
-				<div class="flex"><p><?php  echo $auteur2; ?></p><p><?php echo $titre2; ?></p></div>
-			</div>
-			<div class="presentoir">
-				<div class="couverure"><a href="Cadeaux.php"><img src="<?php echo $photo3;?>" alt="Livre" class="livretab"></a></div>
-				<div class="flex"><p><?php  echo $auteur3; ?></p><p><?php echo $titre3; ?></p></div>
-			</div>
-	</div>
-
--->
-	
-
-
-<div id="conteneur">
+ <div id="conteneur">
 	<h3> Nouveautés jeunesse </h3>
 </div>
 
 <div id="slider" style="z-index: 1">
 	<ul id="contenu_slider" style="z-index: 1">
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo16;?>" class="livretab_carousel " alt="Alien" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo17;?>" class="livretab_carousel" alt="Avatar" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo22;?>" class="livretab_carousel" alt="Avengers" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo23;?>" class="livretab_carousel" alt="Alien" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avatar" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avengers" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Alien" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avatar" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avengers" /></a></li>
-	</ul>
+		<li><a href="livre<?php $ID=16; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID=17; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID=22; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID=23; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID=1; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID++; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
 </div>
-
-<!--
-
-	<div id="vitrine">
-		<div class="presentoir">
-			<div class="couverure"><a href="livre<?php echo $photo16;?>.php"><img src="<?php echo $photo16;?>" alt="Livre" class="livretab"></a></div>
-			<div class="flex"><p><?php  echo $auteur16; ?></p><p><?php echo $titre16; ?></p></div>
-		</div>
-		<div class="presentoir">
-			<div class="couverure"><a href="livre<?php echo $photo17;?>.php"><img src="<?php echo $photo17;?>" alt="Livre" class="livretab"></a></div>
-			<div class="flex"><p><?php  echo $auteur17; ?></p><p><?php echo $titre17; ?></p></div>
-		</div>
-		<div class="presentoir">
-			<div class="couverure"><a href="livre<?php echo $photo22;?>.php"><img src="<?php echo $photo22;?>" alt="Livre" class="livretab"></a></div>
-			<div class="flex"><p><?php  echo $auteur22; ?></p><p><?php echo $titre22; ?></p></div>
-
-		
-		<div class="presentoir">
-			<div class="couverure"><a href="livre<?php echo $photo23;?>.php"><img src="<?php echo $photo23;?>" alt="Livre" class="livretab"></a></div>
-			<div class="flex"><p><?php  echo $auteur23; ?></p><p><?php echo $titre23; ?></p></div>
-		</div>
-	</div>
--->		
-	
 
 	<div id="conteneur">
 		<h3> Livres ayant reçu un prix en 2020 </h3>
@@ -212,66 +107,17 @@ while($donnees = $reponse->fetch());
 
 	<div id="slider" style="z-index: 1">
 	<ul id="contenu_slider" style="z-index: 1">
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo18;?>" class="livretab_carousel " alt="Alien" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo19;?>" class="livretab_carousel" alt="Avatar" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo20;?>" class="livretab_carousel" alt="Avengers" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo21;?>" class="livretab_carousel" alt="Alien" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avatar" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avengers" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Alien" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avatar" /></a></li>
-		<li><a href="livre<?php echo $id1;?>.php"><img src="<?php echo $photo1;?>" class="livretab_carousel" alt="Avengers" /></a></li>
+		<li><a href="livre<?php $ID=18; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID=19; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID=20; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID=21; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID=1; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID=1; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID=1; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID=1; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
+		<li><a href="livre<?php $ID=1; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" class="livretab_carousel " alt="Livre" /></a></li>
 	</ul>
 </div>
-<!--
-	<div id="vitrine">
-		<div class="presentoir">
-			<div class="couverure"><a href="livre<?php echo $photo18;?>.php"><img src="<?php echo $photo18;?>" alt="Livre" class="livretab"></a></div>
-			<div class="flex"><p><?php  echo $auteur18; ?></p><p><?php echo $titre18; ?></p></div>
-		</div>
-		<div class="presentoir">
-			<div class="couverure"><a href="livre<?php echo $photo19;?>.php"><img src="<?php echo $photo19;?>" alt="Livre" class="livretab"></a></div>
-			<div class="flex"><p><?php  echo $auteur19; ?></p><p><?php echo $titre19; ?></p></div>
-		</div>
-		<div class="presentoir">
-			<div class="couverure"><a href="livre<?php echo $photo20;?>.php"><img src="<?php echo $photo20;?>" alt="Livre" class="livretab"></a></div>
-			<div class="flex"><p><?php  echo $auteur20; ?></p><p><?php echo $titre20; ?></p></div>
-		</div>
-		<div class="presentoir">
-			<div class="couverure"><a href="livre<?php echo $photo21;?>.php"><img src="<?php echo $photo21;?>" alt="Livre" class="livretab"></a></div>
-			<div class="flex"><p><?php  echo $auteur21; ?></p><p><?php echo $titre21; ?></p></div>
-		</div>
-	</div>
--->		
-
-
-
-
-</script>
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
 
 
 <?php include("footer.php"); ?>
