@@ -19,11 +19,9 @@ session_start();
 	
 	
 	<ul class="hotbar">
-		<li class="toolbar" ><a href="Acceuil.php">Accueil</a></li>
-		<li class="toolbar"><a href="Presse.php">Presse</a></li>
+		<li class="toolbar active" ><a href="Acceuil.php">Accueil</a></li>
 		<li class="toolbar"><a href="Librairie.php">Librairie</a></li>
-		<li class="toolbar active"><a href="Carterie.php">Carterie</a></li>
-		<li class="toolbar"><a href="Papeterie.php">Papeterie</a></li>
+		<li class="toolbar"><a href="Presse.php">Papeterie</a></li>
 		<li class="toolbar left" style="float:right"><a href="Cadeaux.php">À propos</a></li>
     </ul>
 
