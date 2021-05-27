@@ -66,7 +66,7 @@ while($donnees = $reponse->fetch());
     
  <div class="centre">
     <input id="searchbar" onkeyup="search_livre()" type="text"
-        name="search" placeholder="Chercher un journal...">
+
       </div>
     
     <ol id='list'>
