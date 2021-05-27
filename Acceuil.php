@@ -11,6 +11,7 @@ session_start();
     <link rel="icon" type="image/png" sizes="16x16" href="icone.png">
     <meta name="viewport" content="width=device-width">
     <LINK rel="stylesheet" type="text/css" href="carousel.css" media="screen" />
+    <LINK rel="stylesheet" type="text/css" href="acceuil.css" media="screen" />
 
 </head>
 
@@ -59,7 +60,16 @@ do{
 } while($donnees = $reponse->fetch());
 
 ?>
+<div class="bg">
+	<div class="caption">
+    		<span class="border">LIBRAIRIE</span>
+    		<br><br>
+   	 	<span class="border">SAINT NICOLAS</span>
+  	</div>
+</div>
 	
+
+
 
 	<h2> Les nouveautés sur le site </h2>
 <div class="conteneur_slider">

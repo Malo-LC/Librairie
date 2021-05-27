@@ -32,6 +32,9 @@ if(isset($_SESSION['mail'])==TRUE){
 		    	<input type="email" id="email" class="champ_oui" name="mail-connect" required>
 		    	<label for="lname">Mot de passe:</label>
 		    	<input type="password" id="mdp" class="champ_oui" name="mot-de-passe-connect" required>
+		    	<label class="switch">
+				<input type="checkbox" onclick="afficher_mdp()">Afficher le mot de passe
+				 </label>
 		    	<input type="submit" value="Connexion" class="connexion">
     		</form>
     	</div>
@@ -46,12 +49,28 @@ if(isset($_SESSION['mail'])==TRUE){
 		    	<input type="email" id="emailnouveau" class="champ" name="mail" required>
 		    	<label for="mdpnouveau">Mot de passe</label>
 		    	<input type="password" id="mdpnouveau" class="champ" name="mot_de_passe" required>
+		    	<label class="switch">
+				<input type="checkbox" onclick="afficher_mdp()">Afficher le mot de passe
+				 </label><br>
 		    	<input type="submit" value="Créer" class="enregistrer">
     		</form>
     		
     	</div>
     </div>
 
+<script type="text/javascript">
+	function afficher_mdp() {
+  var x = document.getElementById("mdp");
+  var y = document.getElementById("mdpnouveau");
+  if (x.type === "password") {
+    x.type = "text";
+    y.type = "text";
+  } else {
+    x.type = "password";
+    y.type = "password";
+  }
+}
+</script>
 <?php include("footer.php"); ?>
 
 </body>

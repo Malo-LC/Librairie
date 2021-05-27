@@ -66,14 +66,13 @@ session_start();
     		</div>
     	</div>
 </div>
-<div class="carte">
+
 	<h2>Carte</h2>
-	<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3">
-		</div>
-	</div>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2617.590067763524!2d2.2378814158572253!3d48.99935809872438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66774ff0f9541%3A0x642019c9e568e36a!2sLibrairie%20Saint%20Nicolas!5e0!3m2!1sfr!2sfr!4v1622118346652!5m2!1sfr!2sfr"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	
+	<h2>Adresse</h2>
 	<div class="adresse">
-		<h2>Adresse</h2>
+		
 		<p>Les Hauts de Saint-Nicolas</p>
 		<p>95130 </p>
 		<p>Le Plessis-Bouchard, France</p>
@@ -84,19 +83,6 @@ session_start();
 <?php include("footer.php"); ?>
 
 
-<script>
-	(function () {
-        var setting = {"height":550,"width":1300,"zoom":16,"queryString":"Librairie Saint Nicolas, Les Hauts de Saint-Nicolas, 95130 Le Plessis-Bouchard, France","place_id":"ChIJQZUP_3Rn5kcRauNo5ckZIGQ","satellite":false,"centerCoord":[48.99944951826786,2.2400360999999958],"cid":"0x642019c9e568e36a","lang":"fr","cityUrl":"/france/paris","cityAnchorText":"Carte de Paris, Ile de France, France","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"459859"};
-        var d = document;
-        var s = d.createElement('script');
-        s.src = 'https://1map.com/js/script-for-user.js?embed_id=459859';
-        s.async = true;
-        s.onload = function (e) {
-          window.OneMap.initMap(setting)
-        };
-        var to = d.getElementsByTagName('script')[0];
-        to.parentNode.insertBefore(s, to);
-      })();
-  </script>
+
 </body>
 </html>
