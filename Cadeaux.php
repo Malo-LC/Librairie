@@ -71,99 +71,262 @@ while($donnees = $reponse->fetch());
       </div>
     
     <ol id='list'>
-        <li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php $ID=1; echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++;?></p></div>
-		</div></li>
-        <li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
+        <li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID=1; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+        <li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		<li class="livres">
+        	<div class="presentoir">
+				<div class="couverure">
+					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+			</div>
+		</li>
+		
+		
 
-		<li class="livres"><div class="presentoir">
-		<div class="couverure"><a href="livre<?php echo $ID;?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2]; $ID++; ?></p></div>
-		</div></li>
 		
 
     </ol>

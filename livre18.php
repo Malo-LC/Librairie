@@ -109,17 +109,32 @@ do{
 
 <div class="conteneur_random">
 		<div class="presentoir_carousel">
-		<div class="couverure"><?php $ID=1; ?><a href="livre<?php echo $livre[1][1];?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php echo $livre[$ID][3];?></p><p><?php echo $livre[$ID][2];?></p></div>
-		</div>
+				<div class="couverure">
+					<img src="<?php $ID=1; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php  echo $livre[$ID][1];?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p><?php echo $livre[$ID][3];?></p><p><?php echo $livre[$ID][2];?></p></div>
+			</div>
 		<div class="presentoir_carousel">
-		<div class="couverure"><?php $ID=2; ?><a href="livre<?php echo $livre[2][1];?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php echo $livre[$ID][3];?></p><p><?php echo $livre[$ID][2];?></p></div>
-		</div>
-		<div class="presentoir_carousel">
-		<div class="couverure"><?php $ID=3; ?><a href="livre<?php echo $livre[3][1];?>.php"><img src="<?php echo $livre[$ID][4];?>" alt="Livre" class="livretab"></a></div>
-		<div class="flex"><p><?php echo $livre[$ID][3];?></p><p><?php echo $livre[$ID][2];?></p></div>
-		</div>
+				<div class="couverure">
+					<img src="<?php $ID=2; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php echo $livre[$ID][1];?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p><?php echo $livre[$ID][3];?></p><p><?php echo $livre[$ID][2];?></p></div>
+			</div>
+			<div class="presentoir_carousel">
+				<div class="couverure">
+					<img src="<?php $ID=3; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
+					<div class="middle">
+		    			<a href="livre<?php echo $livre[$ID][1];?>.php"><div class="text">Voir</div></a>
+		  			</div>
+		  		</div>
+				<div class="flex"><p><?php echo $livre[$ID][3];?></p><p><?php echo $livre[$ID][2];?></p></div>
+			</div>
 </div>
 	
 
