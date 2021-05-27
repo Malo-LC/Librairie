@@ -16,17 +16,10 @@ session_start();
 
 
 	<ul class="hotbar">
-<<<<<<< HEAD
-		<li class="toolbar active" ><a href="Acceuil.php">Accueil</a></li>
+		<li class="toolbar" ><a href="Acceuil.php">Accueil</a></li>
 		<li class="toolbar"><a href="Librairie.php">Librairie</a></li>
 		<li class="toolbar"><a href="Presse.php">Journaux</a></li>
 		<li class="toolbar left" style="float:right"><a href="Cadeaux.php">À propos</a></li>
-=======
-    <li class="toolbar" ><a href="Acceuil.php">Accueil</a></li>
-    <li class="toolbar"><a href="Librairie.php">Librairie</a></li>
-    <li class="toolbar"><a href="Presse.php">Papeterie</a></li>
-    <li class="toolbar left" style="float:right"><a href="Cadeaux.php">À propos</a></li>
->>>>>>> ce73fd9b2bb60757187ac7908e783b73d4a0289b
     </ul>
     <h1>Librairie Saint-Nicolas</h1>
     <div class="infoprat">
