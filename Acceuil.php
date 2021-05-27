@@ -41,6 +41,23 @@ session_start();
 <?php 
 try
 {
+	$bdd_track = new PDO('mysql:host=localhost;dbname=librairie;charset=utf8', 'root', '');
+}
+catch(Exception $e)
+{
+        die('Erreur : '.$e->getMessage());
+}
+$reponse_track = $bdd_track->query('SELECT * FROM tracking');
+$donnees_track = $reponse_track->fetch();
+$date_track = date("Y/m/d");
+$hour_track = date("h:i:sa");
+$req = $bdd_track->prepare('INSERT INTO tracking(date, time) VALUES (:date_track, :hour_track)'); 
+	$req->execute(array(
+	'date_track' => $date_track,
+	'hour_track' => $hour_track,
+	));
+try
+{
 	$bdd = new PDO('mysql:host=localhost;dbname=librairie;charset=utf8', 'root', '');
 }
 catch(Exception $e)
