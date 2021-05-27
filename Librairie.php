@@ -23,14 +23,13 @@ do{
 	$nb_id++;
 } while($donnees1 = $reponse1->fetch());
 
-$livre = array_fill(1,$nb_id,array_fill(1,5,0));
+$livre = array_fill(1,$nb_id,array_fill(1,4,0));
 do{
 	if($donnees['ID']==$i){
 		$livre[$i][1]=$i;
 		$livre[$i][2]=$donnees['titre'];
 		$livre[$i][3]=$donnees['auteur'];
 		$livre[$i][4]=$donnees['photo'];
-		$livre[$i][5]=$donnees['synopsis'];
 	}
 	$i++;
 }
@@ -339,7 +338,7 @@ function search_livre() {
     input=input.toLowerCase();
     let x = document.getElementsByClassName('livres');
     let y = document.getElementsByClassName('recherche');
-    for (i = 0; i < y.length; i+=2) { 
+    for (i = 0; i < y.length; i+=2){
     	if(i+1!=y.length){
         if (!y[i].innerHTML.toLowerCase().includes(input) && !y[i+1].innerHTML.toLowerCase().includes(input)) {
         	j=i/2;
