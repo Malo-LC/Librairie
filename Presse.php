@@ -40,7 +40,7 @@ while($donnees = $reponse->fetch());
 <html>
 <head>
 	<meta charset="utf-8" />
-    <title>Librairie - Recherche</title>
+    <title>Presse - Recherche</title>
     <link rel="stylesheet" type="text/css" href="stylelibrairie.css" />
     <link rel="icon" type="image/png" sizes="16x16" href="icone.png">
     <LINK rel="stylesheet" type="text/css" href="barre_recherche.css" media="screen" />
@@ -56,13 +56,13 @@ while($donnees = $reponse->fetch());
 
 	<ul class="hotbar">
 		<li class="toolbar " ><a href="Acceuil.php">Accueil</a></li>
-		<li class="toolbar active" ><a href="Librairie.php">Librairie</a></li>
-		<li class="toolbar"><a href="Presse.php">Papeterie</a></li>
+		<li class="toolbar " ><a href="Librairie.php">Librairie</a></li>
+		<li class="toolbar active"><a href="Presse.php">Papeterie</a></li>
 		<li class="toolbar left" style="float:right"><a href="Cadeaux.php">À propos</a></li>
     </ul>
 		
 	<br>
-	<h1>Recherchez un livre :</h1>
+	<h1>Recherchez un magazine :</h1>
     
  <div class="centre">
     <input id="searchbar" onkeyup="search_livre()" type="text"
@@ -75,7 +75,7 @@ while($donnees = $reponse->fetch());
 				<div class="couverure">
 					<img src="<?php $ID=1; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
 					<div class="middle">
-		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		    			<a href="magazine<?php echo $ID;?>.php"><div class="text">Voir</div></a>
 		  			</div>
 		  		</div>
 				<div class="flex"></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
@@ -86,10 +86,10 @@ while($donnees = $reponse->fetch());
 				<div class="couverure">
 					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
 					<div class="middle">
-		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		    			<a href="magazine<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
 		  			</div>
 		  		</div>
-				<div class="flex"><p class="recherche"></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
 			</div>
 		</li>
 		<li class="livres">
@@ -97,10 +97,10 @@ while($donnees = $reponse->fetch());
 				<div class="couverure">
 					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
 					<div class="middle">
-		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		    			<a href="magazine<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
 		  			</div>
 		  		</div>
-				<div class="flex"><p class="recherche"></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
 			</div>
 		</li>
 		<li class="livres">
@@ -108,10 +108,10 @@ while($donnees = $reponse->fetch());
 				<div class="couverure">
 					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
 					<div class="middle">
-		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		    			<a href="magazine<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
 		  			</div>
 		  		</div>
-				<div class="flex"><p class="recherche"></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
 			</div>
 		</li>
 		<li class="livres">
@@ -119,10 +119,10 @@ while($donnees = $reponse->fetch());
 				<div class="couverure">
 					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
 					<div class="middle">
-		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		    			<a href="magazine<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
 		  			</div>
 		  		</div>
-				<div class="flex"><p class="recherche"></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
 			</div>
 		</li>
 		<li class="livres">
@@ -130,10 +130,10 @@ while($donnees = $reponse->fetch());
 				<div class="couverure">
 					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
 					<div class="middle">
-		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		    			<a href="magazine<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
 		  			</div>
 		  		</div>
-				<div class="flex"><p class="recherche"></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
 			</div>
 		</li>
 		<li class="livres">
@@ -141,10 +141,10 @@ while($donnees = $reponse->fetch());
 				<div class="couverure">
 					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
 					<div class="middle">
-		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		    			<a href="magazine<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
 		  			</div>
 		  		</div>
-				<div class="flex"><p class="recherche"></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
 			</div>
 		</li>
 		<li class="livres">
@@ -152,10 +152,10 @@ while($donnees = $reponse->fetch());
 				<div class="couverure">
 					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
 					<div class="middle">
-		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		    			<a href="magazine<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
 		  			</div>
 		  		</div>
-				<div class="flex"><p class="recherche"></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
 			</div>
 		</li>
 		<li class="livres">
@@ -163,10 +163,10 @@ while($donnees = $reponse->fetch());
 				<div class="couverure">
 					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
 					<div class="middle">
-		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		    			<a href="magazine<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
 		  			</div>
 		  		</div>
-				<div class="flex"><p class="recherche"></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
 			</div>
 		</li>
 		<li class="livres">
@@ -174,10 +174,10 @@ while($donnees = $reponse->fetch());
 				<div class="couverure">
 					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
 					<div class="middle">
-		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		    			<a href="magazine<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
 		  			</div>
 		  		</div>
-				<div class="flex"><p class="recherche"></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
 			</div>
 		</li>
 		<li class="livres">
@@ -185,10 +185,10 @@ while($donnees = $reponse->fetch());
 				<div class="couverure">
 					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
 					<div class="middle">
-		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		    			<a href="magazine<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
 		  			</div>
 		  		</div>
-				<div class="flex"><p class="recherche"></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
 			</div>
 		</li>
 		<li class="livres">
@@ -196,10 +196,10 @@ while($donnees = $reponse->fetch());
 				<div class="couverure">
 					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
 					<div class="middle">
-		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		    			<a href="magazine<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
 		  			</div>
 		  		</div>
-				<div class="flex"><p class="recherche"></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
 			</div>
 		</li>
 		<li class="livres">
@@ -207,10 +207,10 @@ while($donnees = $reponse->fetch());
 				<div class="couverure">
 					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
 					<div class="middle">
-		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		    			<a href="magazine<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
 		  			</div>
 		  		</div>
-				<div class="flex"><p class="recherche"></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
 			</div>
 		</li>
 		<li class="livres">
@@ -218,10 +218,10 @@ while($donnees = $reponse->fetch());
 				<div class="couverure">
 					<img src="<?php $ID++; echo $livre[$ID][4];?>" alt="Livre" class="livretab">
 					<div class="middle">
-		    			<a href="livre<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
+		    			<a href="magazine<?php  echo $ID;?>.php"><div class="text">Voir</div></a>
 		  			</div>
 		  		</div>
-				<div class="flex"><p class="recherche"></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
+				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
 			</div>
 		</li>
 		
