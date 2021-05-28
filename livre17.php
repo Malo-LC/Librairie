@@ -33,9 +33,9 @@ do{
 	}
 }
 while($donnees = $reponse->fetch());
-$id1=mt_rand(1, 8);
-$id2=mt_rand(9, 15);
-$id3=mt_rand(16, 22);
+$id1=mt_rand(1, 22);
+$id2=mt_rand(23, 45);
+$id3=mt_rand(46, 70);
 
 $reponse2 = $bdd->query('SELECT * FROM livres');
 $donnees2 = $reponse2->fetch();
