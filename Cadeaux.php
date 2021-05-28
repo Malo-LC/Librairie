@@ -43,12 +43,12 @@ session_start();
 <p class="marge">Les présentes CGU ou Conditions Générales d’Utilisation encadrent juridiquement l’utilisation des services du site Librairie Saint-Nicolas (ci-après dénommé « le site »).
 Constituant le contrat entre la société Librairie Saint-Nicolas, l’Utilisateur, l’accès au site doit être précédé de l’acceptation de ces CGU. L’accès à cette plateforme signifie l’acceptation des présentes CGU.</p> 
 <h2>Article 2 : Mentions légales</h2>
-<p class="marge">L’édition du site Librairie Saint-Nicolas est assurée par la société La Petite Perle inscrite au RCS sous le numéro 451 432 228, dont le siège social est localisé au 3 Rue Docteur Joubert, 59110, La Madeleine, France Métropolitaine.
+<p class="marge">L’édition du site Librairie Saint-Nicolas est assurée par la société Librairie Saint-Nicolas inscrite au RCS sous le numéro 451 432 228, dont le siège social est localisé au 3 Rue Docteur Joubert, 59110, La Madeleine, France Métropolitaine.
 L’hébergeur du site Librairie Saint-Nicolas.fr est la société LHW, sise au 5 Rue Keller, 59100 Roubaix, France.</p> 
 <h2>Article 3 : Accès au site</h2>
 <p class="marge">Le site Librairie Saint-Nicolas permet d’accéder gratuitement aux services suivants :
-<p class="marge">•	Vente de livres (en or, en argent…) ;</p>
-<p class="marge">•	Location de livres (en or, en argent…) ;</p>
+<p class="marge">•	Vente de livres ;</p>
+<p class="marge">•	Location de livres ;</p>
 <p class="marge">•	Dépôt-vente de livres.</p>
 <p class="marge">Le site est accessible gratuitement depuis n’importe où par tout utilisateur disposant d’un accès à Internet. Tous les frais nécessaires pour l’accès aux services (matériel informatique, connexion Internet…) sont à la charge de l’utilisateur.
 L’accès aux services dédiés aux membres s’effectue à l’aide d’un identifiant et d’un mot de passe.
