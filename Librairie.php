@@ -47,10 +47,7 @@ while($donnees = $reponse->fetch());
 
 </head>
 
-
 <body>
-
-
 
 	<?php include("entete.php"); ?>
 
@@ -69,7 +66,7 @@ while($donnees = $reponse->fetch());
         name="search" placeholder="Chercher un livre..">
       </div>
     
-    <ol id='list'>
+<ol id='list'>
         <li class="livres">
         	<div class="presentoir">
 				<div class="couverure">
@@ -840,18 +837,8 @@ while($donnees = $reponse->fetch());
 				<div class="flex"><p class="recherche"><?php echo $livre[$livre[$ID][1]][3];?></p><p class="recherche"><?php echo $livre[$livre[$ID][1]][2];?></p></div>
 			</div>
 		</li>
+</ol>
 
-
-
-
-
-
-
-
-
-		</ol>
-
-		
 		<button onclick="topFunction()" id="bouttonHaut" title="Aller en haut">Top</button>
 
 
@@ -917,16 +904,7 @@ function search_livre() {
 }
     </script>
 
-
-
-	
-
-	
 <br><br>
-
-
-
-
 
 <?php include("footer.php"); ?>
 
