@@ -336,39 +336,38 @@ while($donnees = $reponse->fetch());
 		</li>
 		
 		
-		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<button onclick="topFunction()" id="bouttonHaut" title="Aller en haut">Top</button>
   
 		
 
     </ol>
       <style type="text/css">
-			#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  left: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #2F2C57; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+#bouttonHaut {
+  display: none;
+  position: fixed; 
+  bottom: 20px; 
+  left: 30px; 
+  z-index: 99; /
+  border: none; 
+  outline: none; 
+  background-color: #2F2C57; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
 }
 
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+#bouttonHaut:hover {
+  background-color: #555; 
 }
 		</style>
-    </ol>
+   
       
     <script type="text/javascript">
-    	//Get the button:
-mybutton = document.getElementById("myBtn");
+mybutton = document.getElementById("bouttonHaut");
 
-// When the user scrolls down 20px from the top of the document, show the button
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -379,14 +378,10 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-</script>
-    <script type="text/javascript">
-    	
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0; 
+}    	
     	
 function search_livre() {
     let input = document.getElementById('searchbar').value
